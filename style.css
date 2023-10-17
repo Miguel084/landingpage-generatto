@@ -1,0 +1,27 @@
+
+.botoesheader {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    background-color: transparent;
+    word-spacing: normal;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.botoesheader:hover {
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#planoDeFundoHeader {
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    margin-bottom: 0;
+    transition: all 0.3s ease-in-out;
+}
