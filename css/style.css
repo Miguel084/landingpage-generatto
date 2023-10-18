@@ -24,6 +24,10 @@
 
 
 /* ********** Header/Navbar ********** */
+.nav-item{
+    padding: 20px 20px 0 0;
+    margin: 20px 20px 0 0;
+}
 
 /* Background */
 .nav-bg {
