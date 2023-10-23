@@ -24,62 +24,102 @@
 
 
 /* ********** Header/Navbar ********** */
-.nav-item{
-    padding: 20px 20px 0 0;
-    margin: 20px 20px 0 0;
-}
 
 /* Background */
 .nav-bg {
-    min-height: 90px;
-    padding: 15px 0;
-    background: rgb(0 0 0 / 15%) !important;
-    position: fixed;
-    width: 100%;
-    z-index: 100; /* Objeto na frente de todo conteúdo */
-    transition: background 0.4s; /* Transição de fundo */
-    /* Alinhamento */
-    top: 0;
-    left: 0;
-}
+  position: sticky;
+  min-height: 70px;
+  padding: 15px 0;
+  background: var(--white);
+  width: 100%;
+  z-index: 100;
+  transition: background 0.4s;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  }
+
+  /* Nav LOGO */
+  .nav-logo {
+    margin-left: 60px;
+  }
 
 /* Links */
 .navbar-nav .nav-item .nav-link {
     font-size: 1.5em;
     text-align: center;
-    color: var(--primary-color);
     font-family: 'roboto', sans-serif;
-    transition: all 0.3s ease-in-out;
+    color: var(--primary-color) !important;
 }
+ 
 /* Links - Hover */
 .navbar-nav .nav-item .nav-link:hover {
-    color: var(--secondary-color);
+    color: var(--secondary-color) !important;
     transition: all 0.3s ease-in-out;
 }
 
 /* Links - Focus */
 .navbar-nav .nav-item .nav-link:focus {
-    color: var(--secondary-color);
     transition: all 0.3s ease-in-out;
+    color: var(--secondary-color) !important;
+    font-weight: 600;
 }
 
 /* Menu Hamburguer */
 .custom-toggler {
-    background-color: var(--highlight);
-    outline-color: var(--white);
+    margin-right: 60px;
+    border: 2px solid var(--secondary-color) !important;
 }
 
 .custom-toggler:focus {
-    background-color: var(--white);
-    outline-color: var(--highlight);
+    background-color: var(--secondary-color);
+    outline: none;
 }
 
 .burguer-color {
     color: var(--primary-color);
 }
 
-main {
-    padding-top: 100px;
+
+/* ********** About me Section ********** */
+
+.about-me {
+  position: relative;
+  padding: 100px 50px;
+  height: 100vh;
+  color: var(--white);
+  }
+  
+  .about-me::before {
+    content: "";
     background: url("../images/about-me-background.jpg") center/cover no-repeat;
-    height: 100vh; /* Ajuste a altura conforme necessário */
-}
+    filter: blur(2px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: -1;
+  }
+  
+  .about-me-content {
+    position: relative;
+    z-index: 1;
+    color: var(--white)
+  }
+  .about-me-btn {
+    font-weight: 600;
+    min-width: 120px;
+    min-height: 35px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  .about-me-btn:hover {
+    background-color: #0d1b29;
+  }
+  .about-me-btn:focus {
+    outline: none;
+    border: none;
+    
+  }
+  
